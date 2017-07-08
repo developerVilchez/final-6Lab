@@ -7,6 +7,12 @@ const render = (root) => {
   switch (state.window) {
     case null:
               wrapper.append(Header());
+			  wrapper.append(sectionNews());
+			  wrapper.append(sectionWorld());
+			  wrapper.append(sectionTech());
+			  wrapper.append(sectionEdu());
+			  wrapper.append(sectionOpinion());
+			  wrapper.append(Footer());
       break;
    
 }

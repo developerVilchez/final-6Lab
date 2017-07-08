@@ -24,6 +24,11 @@ const menuMobile = () => {
 
 		$.each(menuOptions,(i,val)=>{
 			column2.find('.menu').children().find('.menu__link').eq(i).text(val);
+			column2.find('.menu').children().find('.menu__link').eq(i).attr('href',i);
+			column2.find('.menu').children().find('.menu__link').eq(i).on('click',(e)=>{
+				e.preventDefault();
+			})
+		
 		})
 	
 		

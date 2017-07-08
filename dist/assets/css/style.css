@@ -159,8 +159,8 @@ img {
 .container .base-8-8 {
   width: 100%; }
 
-/*movil: A partir de 480px*/
-@media all and (min-width: 480px) {
+/*movil: A partir de 320px*/
+@media all and (min-width: 320px) {
   /*Tamaños en porcentajes*/
   .container .column.movil-5 {
     width: 5%; }
@@ -521,11 +521,11 @@ img {
   padding-left: 30px;
   padding-right: 30px; }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 319px) {
   .desde-movil {
     display: none; } }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .desde-movil {
     display: block; } }
 
@@ -553,11 +553,11 @@ img {
   .desde-hd {
     display: block; } }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 319px) {
   .hasta-movil {
     display: block; } }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .hasta-movil {
     display: none; } }
 
@@ -625,6 +625,12 @@ header {
   border-bottom: 1px solid #f7b617;
   padding-bottom: 0; }
 
+footer {
+  background-color: #f7b617;
+  text-align: center;
+  padding: 2em;
+  color: #fff; }
+
 .header {
   display: -ms-flexbox;
   display: flex;
@@ -639,6 +645,9 @@ header {
     width: 60%; }
   .header__menu {
     height: 20px; }
+
+.footerBlock__img {
+  margin-bottom: 2em; }
 
 .menu {
   list-style: none;
@@ -658,22 +667,190 @@ header {
     .menu__link:link {
       text-decoration: none; }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  #clientes .container:before, #clientes .container:after {
-    clear: both;
-    content: " ";
-    display: table;
-    width: 100%; }
-  #clientes .container > column, #clientes .container > .column {
-    float: left;
-    width: 48%;
-    margin-right: 4;
-    margin-bottom: 4;
-    vertical-align: top; }
-    #clientes .container > column:nth-child(2n), #clientes .container > .column:nth-child(2n) {
-      margin-right: 0;
-      clear: right; }
-    #clientes .container > column:nth-child(2n+1), #clientes .container > .column:nth-child(2n+1) {
-      clear: left; } }
+.newsBlock1__tittle:after {
+  content: "____";
+  color: #fff;
+  position: relative;
+  right: 15%;
+  border-bottom: 3px solid #f7b617; }
+
+.newsBlock1__img {
+  background-image: url("/assets/images/foto1.png");
+  height: 250px;
+  background-position: bottom;
+  background-size: cover; }
+
+.newsBlock1__article {
+  position: relative;
+  line-height: 2;
+  bottom: 5em;
+  color: #fff;
+  padding-left: 1em; }
+
+.newsBlock2__img {
+  background-image: url("/assets/images/foto2.png");
+  height: 250px;
+  background-position: bottom;
+  background-size: cover; }
+
+.newsBlock2__article {
+  padding: 2em;
+  background-color: #2b2b2b;
+  color: #fff;
+  padding-left: 1em; }
+
+.newsBlock3__img {
+  background-image: url("/assets/images/foto3.png");
+  height: 150px;
+  background-position: bottom;
+  background-size: cover; }
+
+.newsBlock3__article {
+  padding: 2em;
+  background-color: #2b2b2b;
+  color: #fff;
+  padding-left: 1em; }
+
+.newsBlock4__img {
+  background-image: url("/assets/images/foto4.png");
+  height: 150px;
+  background-position: bottom;
+  background-size: cover; }
+
+.newsBlock4__article {
+  padding: 2em;
+  background-color: #2b2b2b;
+  color: #fff;
+  padding-left: 1em; }
+
+.worldBlock1__tittle:after {
+  content: "____";
+  color: #fff;
+  position: relative;
+  right: 15%;
+  border-bottom: 3px solid #f7b617; }
+
+.worldBlock1__img {
+  background-image: url("/assets/images/foto5.png");
+  height: 250px;
+  background-position: bottom;
+  background-size: cover; }
+
+.worldBlock2__img {
+  background-image: url("/assets/images/foto6.png");
+  height: 50px;
+  background-position: center;
+  background-size: cover; }
+
+.worldBlock3__img {
+  background-image: url("/assets/images/foto7.png");
+  height: 50px;
+  background-position: center;
+  background-size: cover; }
+
+.worldBlock4__img {
+  background-image: url("/assets/images/foto8.png");
+  height: 50px;
+  background-position: center;
+  background-size: cover; }
+
+.techBlock1__tittle:after {
+  content: "____";
+  color: #fff;
+  position: relative;
+  right: 15%;
+  border-bottom: 3px solid #f7b617; }
+
+.techBlock1__img {
+  background-image: url("/assets/images/foto15.png");
+  height: 200px;
+  background-position: bottom;
+  background-size: cover; }
+
+.techBlock2__img {
+  background-image: url("/assets/images/foto18.png");
+  height: 50px;
+  background-position: center;
+  background-size: cover; }
+
+.techBlock3__img {
+  background-image: url("/assets/images/foto19.png");
+  height: 50px;
+  background-position: center;
+  background-size: cover; }
+
+.teachBlock1__tittle:after {
+  content: "____";
+  color: #fff;
+  position: relative;
+  right: 15%;
+  border-bottom: 3px solid #f7b617; }
+
+.teachBlock1__img {
+  background-image: url("/assets/images/foto20.png");
+  height: 200px;
+  background-position: bottom;
+  background-size: cover; }
+
+.teachBlock2__img {
+  background-image: url("/assets/images/foto21.png");
+  height: 200px;
+  background-position: center;
+  background-size: cover; }
+
+.teachBlock3__img {
+  background-image: url("/assets/images/foto24.png");
+  height: 50px;
+  background-position: center;
+  background-size: cover; }
+
+.teachBlock4__img {
+  background-image: url("/assets/images/foto22.png");
+  height: 50px;
+  background-position: center;
+  background-size: cover; }
+
+.teachBlock5__img {
+  background-image: url("/assets/images/foto25.png");
+  height: 50px;
+  background-position: center;
+  background-size: cover; }
+
+.viewBlock1__tittle:after {
+  content: "____";
+  color: #fff;
+  position: relative;
+  right: 15%;
+  border-bottom: 3px solid #f7b617; }
+
+.viewBlock1__img {
+  background-image: url("/assets/images/foto25.png");
+  height: 250px;
+  background-position: bottom;
+  background-size: cover; }
+
+.viewBlock2__img {
+  background-image: url("/assets/images/foto26.png");
+  height: 250px;
+  background-position: center;
+  background-size: cover; }
+
+.viewBlock3__img {
+  background-image: url("/assets/images/foto27.png");
+  height: 50px;
+  background-position: center;
+  background-size: cover; }
+
+.viewBlock4__img {
+  background-image: url("/assets/images/foto28.png");
+  height: 50px;
+  background-position: center;
+  background-size: cover; }
+
+.viewBlock5__img {
+  background-image: url("/assets/images/foto27.png");
+  height: 50px;
+  background-position: center;
+  background-size: cover; }
 
 /*# sourceMappingURL=maps/style.css.map */
