@@ -1,7 +1,0 @@
-#clientes .container {
-
-@include desde-hasta(tablet,web){
-	@include cuadricula(column,2,4)
-}
-
-}
